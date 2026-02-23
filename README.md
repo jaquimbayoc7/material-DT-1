@@ -229,7 +229,6 @@ FASE 6: SÍNTESIS, CONCLUSIONES & ESTRATEGIA FUTURA ✅
    - `04_Validacion_Analisis.ipynb` - Consenso + análisis de sensibilidad
    - `05_Interpretacion_Resultados.ipynb` - Perfiles de 14 anomalías, clasificación en 4 tipos
    - `06_Sintesis_Conclusiones.ipynb` - Síntesis, conclusiones, roadmap 2026-2027, arquitectura de app
-   - `06_Sintesis_Conclusiones.ipynb` - Síntesis, conclusiones, roadmap 2026-2027, arquitectura de app
 
 ### Para Análisis Anteriores
 - Carpeta `Análisis Previo/` contiene experimentos anteriores con:
