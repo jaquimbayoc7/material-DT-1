@@ -241,41 +241,42 @@ Para cada estudiante anómalo cuantificar:
 ## 📊 FLUJO DE TRABAJO EN EL PROYECTO
 
 ```
-FASE 1: EXPLORACIÓN (EDA Inicial)
+FASE 1: EXPLORACIÓN (EDA Inicial) ✅
 ├─ Celda 1: Importar librerías y cargar datos
 ├─ Celda 2: EDA - Exploración y descriptivos
 ├─ Celda 3: Análisis de correlaciones
-└─ Celda 4: Identificar variables clave
+└─ Celda 4: Identificar 42 variables normalizadas
 
-FASE 2: PREPARACIÓN (Feature Engineering)
+FASE 2: PREPARACIÓN (Feature Engineering) ✅
 ├─ Celda 5: Crear features derivadas
-├─ Celda 6: Normalización Z-score
+├─ Celda 6: Normalización MinMax [0,1]
 └─ Celda 7: Manejo de datos faltantes
 
-FASE 3: MODELADO (Implementar Algoritmos)
-├─ Celda 8: Modelo 1 - Isolation Forest
-├─ Celda 9: Modelo 2 - Local Outlier Factor (LOF)
-├─ Celda 10: Modelo 3 - One-Class SVM
-└─ Celda 11: Modelo 4 - Autoencoder (opcional)
+FASE 3: MODELADO (Implementar Algoritmos) ✅
+├─ Celda 8: One-Class SVM (26.27% - MEJOR DETECTOR)
+├─ Celda 9: Local Outlier Factor (LOF) - 19.88%
+├─ Celda 10: Isolation Forest - 18.17%
+└─ Celda 11: Autoencoder - 13.30% (Conservative Filter)
 
-FASE 4: VALIDACIÓN (Consenso y Análisis)
-├─ Celda 12: Consenso entre modelos
-└─ Celda 13: Análisis de sensibilidad
+FASE 4: VALIDACIÓN (Consenso y Análisis) ✅
+├─ Celda 12: Consenso entre 4 modelos en 3 splits
+└─ Celda 13: Matriz de confianza (2+/3+/4 modelos)
 
-FASE 5: ANÁLISIS DETALLADO (Interpretación) ✅ COMPLETADA & EJECUTADA
-├─ Celda 14: Visualización 2D (PCA/TSNE) ✅ - Clustering de 81 estudiantes
-├─ Celda 15: Análisis de cada anomalía ✅ - Perfiles individuales 
-├─ Celda 16: Clasificación de tipos ✅ - Mapeo a 4 categorías (Unusual 42.9%, Academic 35.7%, Balance 21.4%)
-└─ Celda 17: Matriz de decisión ✅ - Intervenciones 14 estudiantes (7 CRITICAL, 7 HIGH)
+FASE 5: ANÁLISIS DETALLADO (Interpretación) ✅
+├─ Celda 14: Visualización 2D (PCA/t-SNE)
+├─ Celda 15: 14 anomalías de alta confianza identificadas
+├─ Celda 16: Clasificación en 4 tipos (Unusual 42.9%, Academic 35.7%, Balance 21.4%, Psychological)
+└─ Celda 17: Matriz de intervenciones (7 CRITICAL, 7 HIGH, 12 MODERATE, 55 NORMAL)
 
-FASE 6: SYNTHESIS, CONCLUSIONS & FUTURE STRATEGY ✅ COMPLETADA & EJECUTADA
-├─ Sección 1: Key Findings Summary ✅ - 81 estudiantes, 26 anomalías (32.1%), clasificación en 4 tipos
-├─ Sección 2: Anomaly Types Analysis ✅ - Academic Inconsistencies, Balance, Psychological, Unusual
-├─ Sección 3: Intervention Framework ✅ - Planes de intervención por tier (Immediate, Short-term, Medium-term, Long-term)
-├─ Sección 4: Strategic Roadmap 2026-2027 ✅ - Q1-Q4 2026 + Plan 2027 expansion
-├─ Sección 5: App Deployment - Technical Architecture ✅ - MASM (MAMBA Anomaly Detection System)
-├─ Sección 6: Implementation Roadmap & Deployment Phases ✅ - 4 phases (MVP→Full→Production→Advanced)
-└─ Sección 7: Conclusions & Recommendations ✅ - ROI Analysis, Risk Mitigation, Implementation Guide
+FASE 6: SÍNTESIS, CONCLUSIONES & ESTRATEGIA FUTURA ✅ COMPLETADA
+├─ Sección 1: Key Findings Summary ✅ - 81 estudiantes, 26 anomalías (32.1%)
+├─ Sección 2: Anomaly Types Analysis ✅ - Academic, Balance, Unusual, Psychological
+├─ Sección 2.5: Anomaly Visualization & Model Performance ✅ - 4-panel comprehensive chart
+├─ Sección 3: Intervention Framework ✅ - Immediate/Short/Medium/Long-term plans
+├─ Sección 4: Strategic Roadmap 2026-2027 ✅ - Q1-Q4 planning
+├─ Sección 5: App Deployment - Technical Architecture ✅ - MADS System
+├─ Sección 6: Implementation Roadmap & Deployment Phases ✅ - 4 phases to production
+└─ Sección 7: Conclusions & Recommendations ✅ - Executive summary
 ```
 
 ---
@@ -306,7 +307,8 @@ Ana-1/
 ### Visualizations Generated
 ├── celda14_pca_tsne.png - 2D clustering (PCA + t-SNE)
 ├── celda16_type_classification.png - Anomaly type classification charts
-└── celda17_intervention_heatmap.png - Intervention decision matrix
+├── celda17_intervention_heatmap.png - Intervention decision matrix
+└── anomaly_analysis_comprehensive.png - 4-panel comprehensive analysis (types, risk tiers, model performance, ensemble strategy)
 ```
 
 ---
@@ -335,8 +337,8 @@ Ana-1/
 
 ---
 
-**Última actualización:** 20 de febrero de 2026  
+**Última actualización:** 23 de febrero de 2026  
 **Semillero:** Mamba  
 **Institución:** Corporación Universitaria del Huila - CORHUILA  
-**Instructor:** [Nombre]
+**Docente:** Julian Quimbayo Castro
 
