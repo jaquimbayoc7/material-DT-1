@@ -9,7 +9,7 @@
 
 ## 📋 Descripción General
 
-Este repositorio contiene un análisis completo e integral de **detección de anomalías** en estudiantes del **Semillero Mamba** de la institución **JAQC**. El proyecto utiliza técnicas avanzadas de **Machine Learning no supervisado** para identificar patrones inusuales, inconsistencias y perfiles de riesgo en estudiantes, con el objetivo de proporcionar intervenciones pedagógicas personalizadas.
+Este repositorio contiene un análisis completo e integral de **detección de anomalías** en estudiantes del **Semillero Mamba** de la institución **Corporación Universitaria del Huila - CORHUILA**. El proyecto utiliza técnicas avanzadas de **Machine Learning no supervisado** para identificar patrones inusuales, inconsistencias y perfiles de riesgo en estudiantes, con el objetivo de proporcionar intervenciones pedagógicas personalizadas.
 
 ### 🎯 Objetivo Principal
 Identificar estudiantes con patrones de comportamiento **anómalos e inconsistentes** que requieran intervención especial, considerando dimensiones académicas, psicológicas, socioeconómicas y personales.
@@ -309,7 +309,7 @@ Este proyecto está bajo licencia MIT. Ver archivo LICENSE para más detalles.
 
 ## 📞 Contacto
 
-- **Institución:** JAQC
+- **Institución:** Corporación Universitaria del Huila - CORHUILA
 - **Semillero:** Mamba
 - **Repositorio:** https://github.com/jaquimbayoc7/material-DT-1
 - **Última Actualización:** 23 de febrero de 2026

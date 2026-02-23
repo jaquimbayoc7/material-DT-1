@@ -326,6 +326,6 @@ Ana-1/
 
 **Última actualización:** 20 de febrero de 2026  
 **Semillero:** Mamba  
-**Institución:** JAQC  
+**Institución:** Corporación Universitaria del Huila - CORHUILA  
 **Instructor:** [Nombre]
 
