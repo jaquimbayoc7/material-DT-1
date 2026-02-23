@@ -30,7 +30,8 @@ material-DT-1/
 │   │   ├── 02_Preparacion_Features.ipynb (Feature engineering)
 │   │   ├── 03_Modelado_Anomalias.ipynb (Modelos de detección)
 │   │   ├── 04_Validacion_Analisis.ipynb (Validación y consenso)
-│   │   └── 05_Interpretacion_Resultados.ipynb (Resultados finales)
+│   │   ├── 05_Interpretacion_Resultados.ipynb (Análisis detallado)
+│   │   └── 06_Sintesis_Conclusiones.ipynb (Síntesis, conclusiones, estrategia futura)
 │   │
 │   └── 📂 data/
 │       └── RespuestasSemillero_completo.json (Datos sin procesar)
@@ -175,39 +176,43 @@ jupyter notebook
 
 ## 📈 Flujo de Trabajo Principal
 
-El proyecto **Ana-1** sigue una estructura de 6 fases:
+El proyecto **Ana-1** sigue una estructura de 6 fases completamente ejecutadas:
 
 ```
-FASE 1: EXPLORACIÓN (EDA Inicial)
+FASE 1: EXPLORACIÓN (EDA Inicial) ✅
 ├─ Importar librerías y cargar datos
 ├─ Exploración y descriptivos
 ├─ Análisis de correlaciones
-└─ Identificar variables clave
+└─ Identificar variables clave (42 variables finales)
 
-FASE 2: PREPARACIÓN (Feature Engineering)
+FASE 2: PREPARACIÓN (Feature Engineering) ✅
 ├─ Crear features derivadas
-├─ Normalización Z-score
+├─ Normalización MinMax [0,1]
 └─ Manejo de datos faltantes
 
-FASE 3: MODELADO (Implementar Algoritmos)
-├─ Isolation Forest
-├─ Local Outlier Factor (LOF)
-├─ One-Class SVM
-└─ Autoencoder (opcional)
+FASE 3: MODELADO (Implementar Algoritmos) ✅
+├─ One-Class SVM (26.27% - MEJOR)
+├─ Local Outlier Factor (19.88%)
+├─ Isolation Forest (18.17%)
+└─ Autoencoder (13.30% - Conservative)
 
-FASE 4: VALIDACIÓN (Consenso y Análisis)
-├─ Consenso entre modelos
-└─ Análisis de sensibilidad
+FASE 4: VALIDACIÓN (Consenso y Análisis) ✅
+├─ Consenso entre 4 modelos
+└─ Análisis de sensibilidad 3 splits
 
-FASE 5: ANÁLISIS DETALLADO (Interpretación)
-├─ Visualización 2D (PCA/TSNE)
-├─ Análisis de cada anomalía
-├─ Clasificación de tipos
-└─ Matriz de decisión
+FASE 5: ANÁLISIS DETALLADO (Interpretación) ✅
+├─ Visualización 2D (PCA/t-SNE)
+├─ 14 anomalías de alta confianza detectadas
+├─ Clasificación en 4 tipos (Unusual 42.9%, Academic 35.7%, Balance 21.4%)
+└─ Matriz de intervenciones (7 CRITICAL, 7 HIGH)
 
-FASE 6: SÍNTESIS (Conclusiones)
-├─ Visualizaciones finales
-└─ Conclusiones y recomendaciones
+FASE 6: SÍNTESIS, CONCLUSIONES & ESTRATEGIA FUTURA ✅
+├─ Visualizaciones 4-panel (anomaly_analysis_comprehensive.png)
+├─ Marco de intervención por rango de tiempo
+├─ Hoja de ruta estratégica CORHUILA 2026-2027
+├─ Propuesta técnica app MADS (MAMBA Anomaly Detection System)
+├─ 4 fases de despliegue (MVP → Full → Production → Advanced)
+└─ Recomendaciones ejecutivas y plan de implementación
 ```
 
 ---
@@ -217,12 +222,14 @@ FASE 6: SÍNTESIS (Conclusiones)
 ### Para Análisis Principal
 1. Navega a `Análisis Nuevo/Ana-1/`
 2. Lee el [README.md](Análisis%20Nuevo/Ana-1/README.md) para la metodología completa
-3. Ejecuta los notebooks en orden:
-   - `01_EDA_Inicial.ipynb` - Exploración inicial
-   - `02_Preparacion_Features.ipynb` - Feature engineering
-   - `03_Modelado_Anomalias.ipynb` - Entrenar modelos
-   - `04_Validacion_Analisis.ipynb` - Validar resultados
-   - `05_Interpretacion_Resultados.ipynb` - Interpretar anomalías
+3. Consulta los notebooks (todos ejecutados y validados):
+   - `01_EDA_Inicial.ipynb` - Análisis exploratorio de 81 estudiantes
+   - `02_Preparacion_Features.ipynb` - 42 variables normalizadas
+   - `03_Modelado_Anomalias.ipynb` - 4 modelos × 3 splits, rankings de rendimiento
+   - `04_Validacion_Analisis.ipynb` - Consenso + análisis de sensibilidad
+   - `05_Interpretacion_Resultados.ipynb` - Perfiles de 14 anomalías, clasificación en 4 tipos
+   - `06_Sintesis_Conclusiones.ipynb` - Síntesis, conclusiones, roadmap 2026-2027, arquitectura de app
+   - `06_Sintesis_Conclusiones.ipynb` - Síntesis, conclusiones, roadmap 2026-2027, arquitectura de app
 
 ### Para Análisis Anteriores
 - Carpeta `Análisis Previo/` contiene experimentos anteriores con:
@@ -311,6 +318,7 @@ Este proyecto está bajo licencia MIT. Ver archivo LICENSE para más detalles.
 
 - **Institución:** Corporación Universitaria del Huila - CORHUILA
 - **Semillero:** Mamba
+- **Docente:** Julian Quimbayo Castro
 - **Repositorio:** https://github.com/jaquimbayoc7/material-DT-1
 - **Última Actualización:** 23 de febrero de 2026
 
